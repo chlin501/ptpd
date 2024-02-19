@@ -1,0 +1,5 @@
+#!/bin/sh
+
+bin=$(dirname $0)/..
+
+docker build -t ptpd2 --build-arg=latest $bin/.

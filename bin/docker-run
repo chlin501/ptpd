@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker run -d ptpd2 -e interface=xyz

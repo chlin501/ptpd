@@ -1,0 +1,5 @@
+#!/bin/sh
+
+interface=${interface:-eth0}
+
+exec /ptpd/ptpd2 -C -c client-e2e-socket.conf -i $interface
