@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  ptpd1:
+    image: ptpd2
+    build:
+      context: .
+      dockerfile: Dockerfile
+  ptpd2:
+    image: ptpd2
+    build:
+      context: .
+      dockerfile: Dockerfile
