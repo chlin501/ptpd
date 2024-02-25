@@ -4,9 +4,13 @@ services:
     image: ptpd2
     build:
       context: .
+      args:
+        image_version: latest
       dockerfile: Dockerfile
   ptpd2:
     image: ptpd2
     build:
       context: .
+      args:
+        image_version: latest
       dockerfile: Dockerfile
