@@ -1,3 +1,9 @@
 #!/bin/sh
 
-docker run -d ptpd2 -e interface=xyz
+# docker run -d ptpd2 -e interface=eth0
+docker run -d                         \
+    -p 2222:22                        \
+    --security-opt seccomp:unconfined \
+    -v $PWD:/ptpd                     \
+    --name ptpd2                      \
+    ptpd2

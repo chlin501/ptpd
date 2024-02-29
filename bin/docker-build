@@ -2,4 +2,4 @@
 
 bin=$(dirname $0)/..
 
-docker build -t ptpd2 --build-arg=latest $bin/.
+docker build --build-arg "IMAGE_VERSION=latest" --build-arg "ROOT_PASSWORD=root" --build-arg "DEST_DIR=/ptpd" -t ptpd2 $bin/.
